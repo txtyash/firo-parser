@@ -1,6 +1,6 @@
 # vimiumC.css
 
-### Dark theme for vimiumC(not [vimium](https://github.com/zim0369/vimium.css)) vomnibar and vimiumC hint markers.
+### Custom CSS for vimiumC(not [vimium](https://github.com/zim0369/vimium.css)) vomnibar and vimiumC hint markers.
 
 Copy the vimiumC.css file to the 'custom css' pane in vimiumC's options tab. 
 
