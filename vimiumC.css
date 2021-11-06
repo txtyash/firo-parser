@@ -6,10 +6,7 @@
 
 /* link hints */
 .LH {
-    border: 2px rgba(228, 202, 87, 0.5) solid;
     background: #394d6d !important;
-    margin-top: -2px;
-    margin-left: -2px;
     color: #fffff0;
     z-index: 0;
   font-size: 17px !important;
