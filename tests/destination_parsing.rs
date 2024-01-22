@@ -1,7 +1,4 @@
-mod helpers;
-
 use firo_parser::parse_destination;
-use helpers::file_to_string;
 
 #[test]
 fn valid_destination_file() {
@@ -18,7 +15,7 @@ fn valid_destination_file() {
         ],
         vec![String::from("<!>"), String::from(" /tmp/something.txt")],
     ]);
-    let unparsed = file_to_string("/home/yash/github/firo-parser/tests/destination.firo").unwrap();
+    let unparsed = include_str!("destination.firo").to_string();
     assert_eq!(destination, parse_destination(unparsed).unwrap());
 }
 
@@ -29,6 +26,6 @@ fn origin_is_valid_destination_file() {
         vec![String::from("plugin/file")],
         vec![String::from("folder/name with space.txt")],
     ]);
-    let unparsed = file_to_string("/home/yash/github/firo-parser/tests/origin.firo").unwrap();
+    let unparsed = include_str!("origin.firo").to_string();
     assert_eq!(destination, parse_destination(unparsed).unwrap().to_vec());
 }
