@@ -1,7 +1,15 @@
 [package]
 name = "firo-parser"
+authors = ["evccyr@gmail.com"]
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "Parser for the \".firo\" file format."
+readme = "README.md"
+repository = "https://github.com/evccyr/firo-parser"
+documentation = "https://docs.rs/firo-parser"
+keywords = ["parser", "firo", "parsing", "dsl", "bulk"]
+categories = ["parsing"]
 
 [dependencies]
 anyhow = "1.0.79"
