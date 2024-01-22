@@ -1,0 +1,5 @@
+path_part        = { (!("<" | ">" | "\n" | "\r") ~ ANY)+ }
+pin              = { "<" ~ (ASCII_ALPHANUMERIC+ | "!!" | "!") ~ ">" }
+path             = { (" " | "\t")* ~ (path_part | pin)+ }
+destination_file = { SOI ~ (path ~ NEWLINE*)* ~ EOI }
+origin_file      = { SOI ~ (path_part ~ NEWLINE*)* ~ EOI }
